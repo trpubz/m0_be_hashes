@@ -11,6 +11,7 @@ states = {
 #
 #
 #
+states.each { |state, abbrv| printf("#{state} #{abbrv}\n")}
 
 
 # ======================================
@@ -27,7 +28,7 @@ birthdays = {
 #
 #
 #
-
+birthdays.each { |name, date| printf("#{name}'s birthday: #{date}\n")}
 
 # ======================================
 # 3- Using the following Hash
@@ -43,3 +44,4 @@ login_statuses = {
 #
 #
 #
+login_statuses.each { |name, logged_in| p "#{name} is logged in" if logged_in }
